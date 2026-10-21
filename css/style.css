@@ -85,3 +85,43 @@ nav a {
 blockquote { 
     line-height: 1.8;
 }
+
+.skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+}
+.skills li {
+    background: var(--primary); 
+    color: white;
+    padding: 8px 16px; 
+    border-radius: 20px;
+}
+
+table {
+    width: 100%; 
+    border-collapse: collapse;
+}
+    th, td {
+    padding: 14px 18px; 
+    text-align: left;
+    background: var(--primary);
+    color: white;
+}
+tr:nth-child(even) {
+    background: #f1f5f9; 
+}
+
+.timeline::before {
+    counter-increment: year;
+} 
+.timeline {
+    list-style: none; 
+    counter-reset: year;
+}
+.timeline li {
+    padding-left: 40px; 
+    border-left: 3px solid var(--primary); 
+    margin-bottom: 20px;
+}
