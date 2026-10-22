@@ -1,3 +1,7 @@
+:root {
+    --primary: #2563eb;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6rem;
@@ -97,6 +101,7 @@ blockquote {
     color: white;
     padding: 8px 16px; 
     border-radius: 20px;
+    font-size: 0.9rem;
 }
 
 table {
@@ -124,4 +129,10 @@ tr:nth-child(even) {
     padding-left: 40px; 
     border-left: 3px solid var(--primary); 
     margin-bottom: 20px;
+}
+
+.timeline li::before {
+    counter-increment: year;
+    position: absolute;
+    left: -10px;
 }
