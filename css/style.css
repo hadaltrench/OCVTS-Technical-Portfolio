@@ -52,6 +52,7 @@ h3 {
 a {
     color: var(--primary);
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 a:hover {
     color: #f59e0b;
@@ -148,6 +149,7 @@ tr:nth-child(even) {
 
 .project-card { 
     box-shadow: 0 4px 6px rgba(0,0,0,0.07);
+    transition: transform 0.3s, box-shadow 0.3s;
 
 }
 .profile-img { 
@@ -160,4 +162,8 @@ table {
 }
 .contact-form {
     box-shadow: 0 2px 12px rgba(0,0,0,0.06)
+}
+
+button {
+    transition: background 0.3s, transform 0.2s;
 }
