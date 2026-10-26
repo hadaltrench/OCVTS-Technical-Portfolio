@@ -1,6 +1,12 @@
 :root {
     --primary: #2563eb;
+    --dark: #09247a;
 }
+@media query and (max-width: 600px) { 
+    { .skills-list 
+    gap: 30px; }
+}
+
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -26,6 +32,15 @@ nav {
     z-index: 100;
     background: var(--dark);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+nav ul {
+    display: flex; 
+    justify-content: center; 
+    gap: 30px;
+}
+nav li {
+    align-items: center;
+    list-style: none;
 }
 
 header { 
@@ -109,6 +124,14 @@ blockquote {
     flex-wrap: wrap; 
     gap: 10px;
 }
+
+.skills-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 10px;
+    
+}
+
 .skills li {
     background: var(--primary); 
     color: white;
@@ -148,6 +171,12 @@ tr:nth-child(even) {
     counter-increment: year;
     position: absolute;
     left: -10px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 .project-card { 
