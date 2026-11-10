@@ -28,7 +28,8 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
 </ul>
-    </nav>
+    <button onclick="sayHello()">Click Me</button>
+</nav>
         </header>
         <!--Navigation-->
         <!-- Chapter 6 -->
@@ -200,7 +201,26 @@ alt="Sideways flu promtoional" width="190" height="160">
     <footer>
  <a href="github.com/hadaltrench" target="_blank" rel="noopener noreferrer">Github</a>
  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">Linkedin</a>
+ <p>&copy; <span id="year">2023</span> Alyssa</p>
     </footer>
+<!-- Chapter 15 -->
+<script>
+// Your code here
+console.time("time");
+console.log("Welcome to Alyssa's Portfolio!");
+console.warn("Feel free to snoooooooop around :-)");
+console.timeEnd("time");
 
+function getCurrentYear() {
+    return new Date().getFullYear();
+}
+document.getElementById("year").
+textContent = getCurrentYear();
+
+function sayHello() {
+    alert("Thanks for visiting!");
+}
+
+</script>
     </body>
 </html>
