@@ -28,7 +28,10 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
 </ul>
-    <button onclick="sayHello()">Click Me</button>
+    <button onclick="sayHello()">Click Me</button> 
+    <button onclick="window.print()">Print</button>
+    <button onclick="console.clear()">Clear</button>
+    <button onclick="hideElement()">Contact</button>
 </nav>
         </header>
         <!--Navigation-->
@@ -154,7 +157,7 @@ alt="Sideways flu promtoional" width="190" height="160">
         <section id="contact" >
 <!-- Chapter 7 -->
 
-<h2 class="contact-form">Contact Me</h2>
+<h2 class="contactform">Contact Me</h2>
 <a href="mailto:firn32@outlook.com">Email</a>
 <a href="javascript:window.print()">Print This Page</a>
 <a href="#" onclick="alert('Coming soon!')">Newsletter</a>
@@ -201,7 +204,7 @@ alt="Sideways flu promtoional" width="190" height="160">
     <footer>
  <a href="github.com/hadaltrench" target="_blank" rel="noopener noreferrer">Github</a>
  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">Linkedin</a>
- <p>&copy; <span id="year">2023</span> Alyssa</p>
+ <p>&copy; <span id="year">2023</span> Alyssa | Last updated : <span id="update">help</span></p>
     </footer>
 <!-- Chapter 15 -->
 <script>
@@ -217,8 +220,16 @@ function getCurrentYear() {
 document.getElementById("year").
 textContent = getCurrentYear();
 
+document.getElementById("update").
+textContent = document.lastModified;
+
 function sayHello() {
     alert("Thanks for visiting!");
+}
+
+function hideElement() {
+    const element = document.getElementById("contact");
+    element.style.display = 'none';
 }
 
 </script>
