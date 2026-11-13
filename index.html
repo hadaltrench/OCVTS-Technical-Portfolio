@@ -59,6 +59,9 @@ Location: NJ
 Availability: Sometimes
 </p>
 <p>
+Experience: <span id="expYears">0</span>+ Years
+</p>
+<p>
 Favorite Editor: VS Code
 </p>
          </aside>
@@ -73,10 +76,6 @@ Favorite Editor: VS Code
 <img src="https://i.pinimg.com/736x/ec/b3/fb/ecb3fbd28cd9ed02414ca3ef87c026e4.jpg" alt="The flu plush" width="200" height="200">
 <figcaption>The flu plush amazes all.</figcaption>
 </figure>
-
-<video controls width="320">
-<source src="images\orange.mp4" type="video/mp4">
-</video>
 
         </section>
         </div>
@@ -130,6 +129,7 @@ alt="Sideways flu promtoional" width="190" height="160">
 </figure>
 </div>
 
+<!-- Chapter 16 -->
         <table>
     <thead>
 <tr>
@@ -140,7 +140,7 @@ alt="Sideways flu promtoional" width="190" height="160">
 </tr>
     </thead>
 
-    <tbody>
+    <tbody id="projectTableBody">
 <tr>
 <td>n/a</td>
 <td>n/a</td>
@@ -161,7 +161,7 @@ alt="Sideways flu promtoional" width="190" height="160">
 <a href="mailto:firn32@outlook.com">Email</a>
 <a href="javascript:window.print()">Print This Page</a>
 <a href="#" onclick="alert('Coming soon!')">Newsletter</a>
-<form class="contact-form">
+<form class="contact-form" onsubmit="return validateForm()">
 <form action="#" method="POST">
 <input type="text" name="name" placeholder="your name" required>
 <br>
@@ -175,7 +175,7 @@ alt="Sideways flu promtoional" width="190" height="160">
 
 <br>
 
-<form id="contactForm" >
+<form id="contactForm">
 <legend>Project Type</legend>  
 <select name="projectType">
 <option>choose one</option>
@@ -232,6 +232,36 @@ function hideElement() {
     element.style.display = 'none';
 }
 
+function calculateExperience(startYear) {
+     new Date().getFullYear() - startYear
+}
+document.getElementById("expYears").textContent = calculateExperience(2025);
+
+document.querySelectorAll('tabletbody tr');
+console.log(projectTableBody.length);
+
+validateForm();
+value.trim(name, email);
+
+function checkValue(name) {
+if (null) {
+    alert("Please fill in all fields.");
+    return false;
+} else {
+    alert("Message sent!");
+    return false;
+}
+}
+
+function checkValue(email) {
+if (null) {
+    alert("Please fill in all fields.");
+    return false;
+} else {
+    alert("Message sent!");
+    return false;
+}
+}
 </script>
     </body>
 </html>
