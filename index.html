@@ -32,6 +32,7 @@
     <button onclick="window.print()">Print</button>
     <button onclick="console.clear()">Clear</button>
     <button onclick="hideElement()">Contact</button>
+    <button onclick="toggleTheme()">Toggle Theme</button>
 </nav>
         </header>
         <!--Navigation-->
@@ -84,7 +85,7 @@ Favorite Editor: VS Code
 <div class="container" class="skills-list">
         <section id="skills" class="skills"> <!-- Chapter 11 -->
 <h3>Technical Skills</h3>
-<ul>
+<ul id="skillsList">
 <li>HTML</li>
 <li>CSS</li>
 <li>n/a</li>
@@ -209,6 +210,19 @@ alt="Sideways flu promtoional" width="190" height="160">
 <!-- Chapter 15 -->
 <script>
 // Your code here
+isDark = false
+function toggleTheme() {
+if (!isDark) {
+    document.body.style.background = '#1e293b';
+    document.color = '#f8fafc';
+} else { undo;
+}
+}
+
+const extraSkills = ["JavaScript", "React", "Node.js", "Git"];
+select #skillsList;
+
+
 console.time("time");
 console.log("Welcome to Alyssa's Portfolio!");
 console.warn("Feel free to snoooooooop around :-)");
