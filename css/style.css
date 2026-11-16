@@ -3,9 +3,10 @@
     --dark: #09247a;
 }
 @media query and (max-width: 600px) { 
-    { .skills-list 
+ }
+  .skills-list {
     gap: 30px; }
-}
+
 
 
 body {
